@@ -10,7 +10,7 @@ body {
 
 /* header areas styles */
 header {
-  margin: 7.5%;
+  width: 90%;
 }
 header h1 {
   font-size: 24px;
@@ -58,8 +58,6 @@ header h1 {
 .slider-image:hover {
   transform: rotate(40deg);
   transition-duration: 4s;
-  width: 400px;
-  height: 400px;
 }
 /*----------product style start here---------- */
 .product-area {
