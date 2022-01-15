@@ -9,9 +9,7 @@ body {
 }
 
 /* header areas styles */
-header {
-  width: 90%;
-}
+
 header h1 {
   font-size: 24px;
   font-weight: bold;
@@ -159,7 +157,8 @@ header h1 {
 }
 
 /* ---------------media queries for tab---------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  /* slider for tab */
   .slider-text {
     width: 100%;
     font-size: 16px;
@@ -169,6 +168,8 @@ header h1 {
     font-size: 30px;
     color: #3a3a3a;
   }
+
+  /* product for tab */
   .product-area {
     display: flex;
     flex-direction: column;
@@ -182,10 +183,12 @@ header h1 {
   }
   .see-more-btn {
     grid-column: 1/3;
+    margin-top: 20px;
   }
 }
-
-@media screen and (max-width: 481px) {
+/* ---------------media queries for mobile---------- */
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+  /* slider style for mobile */
   .slider-text {
     width: 100%;
     font-size: 16px;
@@ -195,13 +198,37 @@ header h1 {
     font-size: 30px;
     color: #3a3a3a;
   }
-
+  .slider-image {
+    width: 90%;
+    height: 90%;
+    background-size: 90%;
+  }
+  .slider-image img {
+    width: 90%;
+    height: 90%;
+  }
+  /* product style for mobile */
   .products {
     grid-template-columns: repeat(1, 1fr);
-    align-items: center;
+    justify-items: center;
     grid-gap: 20px 10px;
   }
   .see-more-btn {
     grid-column: 1/2;
+  }
+  .form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    color: #0a0826;
+  }
+  .form-area button {
+    margin-top: 20px;
+  }
+  .promo-form h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
   }
 }
