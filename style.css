@@ -15,7 +15,8 @@ header h1 {
 .slider-area {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .slider-text {
   width: 582px;
@@ -35,6 +36,9 @@ header h1 {
   text-decoration: none;
   color: white;
   padding: 10px 40px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* slider image area */
@@ -46,22 +50,37 @@ header h1 {
 }
 
 /*----------product style start here---------- */
+.product-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .product-title {
   font-size: 28px;
-  text-align: center;
   padding: 30px 0px;
 }
+
+.products {
+  display: grid;
+  grid-template-columns: 325px 325px 325px;
+  align-items: center;
+  grid-gap: 20px 10px;
+}
+
 .single-product {
   width: 300px;
   height: 476px;
-  box-shadow: 0px 0px 25px #3a3a3a;
-  border-radius: 10px;
+  box-shadow: 0px 0px 20px #d3d3d3;
+  border-radius: 5px;
   padding: 10px;
 }
 
 .single-product img {
   width: 300px;
   height: 256px;
+}
+.single-product h1 {
+  font-weight: lighter;
 }
 
 .single-product a {
@@ -73,4 +92,42 @@ header h1 {
 .fa-star,
 .fa-star-half-alt {
   color: orange;
+}
+
+/* -------promo area----- */
+
+.promo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  margin-top: 40px;
+  padding: 40px 0px 160px 0px;
+  color: #0a0826;
+}
+.promo-form h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.promo-form input {
+  width: 300px;
+  height: 35px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px gray inset;
+  font-size: 16px;
+}
+
+/* -----------footer area star--------- */
+.footer {
+  background: #0a0826;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
