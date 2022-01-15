@@ -44,3 +44,33 @@ header h1 {
   height: 475px;
   width: 475px;
 }
+
+/*----------product style start here---------- */
+.product-title {
+  font-size: 28px;
+  text-align: center;
+  padding: 30px 0px;
+}
+.single-product {
+  width: 300px;
+  height: 476px;
+  box-shadow: 0px 0px 25px #3a3a3a;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.single-product img {
+  width: 300px;
+  height: 256px;
+}
+
+.single-product a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+/* product font awesome */
+.fa-star,
+.fa-star-half-alt {
+  color: orange;
+}
